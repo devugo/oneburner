@@ -65,6 +65,11 @@ section {
   padding: 40px 20px;
 }
 
+.section-title {
+  color: #333;
+  font-size: 40px;
+}
+
 @media screen and (min-width: 768px) {
   .padding-head {
     padding-left: 78px;
@@ -468,5 +473,27 @@ nav .oneburner-dropdown__menu .body .content .details p {
 
 .more .text p {
   font-size: 20px;
+}
+
+.integrations .section-title {
+  margin-bottom: 40px;
+}
+
+.integrations .logos-layer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  overflow: auto;
+}
+
+.integrations .logos-layer .logo {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  margin: 0 10px;
+}
+
+.integrations .logos-layer .logo img {
+  width: 50px;
 }
 /*# sourceMappingURL=main.css.map */

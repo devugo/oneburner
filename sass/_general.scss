@@ -65,6 +65,10 @@ section {
     padding: 40px 20px;
 }
 
+.section-title {
+    color: $black3;
+    font-size: 40px;
+}
 
 @include media-md {
     .padding-head {
