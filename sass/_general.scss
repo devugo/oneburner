@@ -1,0 +1,57 @@
+
+
+// .short-underline {
+//     position: relative;
+
+//     &::after {
+//         content:' ';
+//         position: absolute;
+//         top:100%;
+//         left:50%;
+//         width: 73px;
+//         border:3px solid $primary-color;
+//         border-radius:4px;
+//         box-shadow:inset 0 1px 1px rgba(0, 0, 0, .05);
+//         transform:translateX(-100%);
+//     }
+// }
+
+input, textarea {
+    width: 100%;
+    border: 1px solid grey;
+    margin-bottom: 20px;
+    height: 50px;
+
+    &:hover, 
+    &:active,
+    &:focus
+    {
+        outline:0px !important;
+        -webkit-appearance:none;
+        box-shadow: none !important;
+        border: 1.5px solid $secondary-color;
+    }
+}
+
+.oneburner-btn {
+    background-color: $primary-color;
+    // padding-left: 33px !important;
+    padding: 15px 33px !important;
+    color: $white !important;
+    border-radius: 100px;
+}
+
+.padding-head {
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+@include media-md {
+    .padding-head {
+        padding-left: 78px;
+        padding-right: 78px;
+    }
+}
+
+
+

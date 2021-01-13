@@ -1,0 +1,252 @@
+.banner {
+    display: relative;
+    .body {
+        margin: 0px 40px;
+        .content{
+            .banner-card {
+                // padding: 70px 60px 60px 60px;
+                padding: 23% 22% 22% 22%;
+                background-color: var(--primaryColor);
+                height: 262px;
+                width: 100%;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                position: relative;
+                @include transition-ease;
+
+                h4 {
+                    font-weight: bold;
+                    font-size: 16px;
+                    line-height: 100%;
+                    margin-bottom: 20px;;
+                }
+                p{
+                    font-style: normal;
+                    font-weight: 300;
+                    font-size: 12px;
+                }
+
+                .orange-pill {
+                    background: #FF5858;
+                    border-radius: 44px;
+                    width: 47px;
+                    height: 4px;
+                    position: absolute;
+                    top: 15px;
+                    right: 25%;
+                }
+                .blue-pill {
+                    width: 22px;
+                    height: 4px;
+                    background: rgba(37, 43, 197, 0.76);
+                    border-radius: 44px;
+                    position: absolute;
+                    top: 15px;
+                    right: 12%;
+                }
+            }
+            &.first-content {
+                position: relative;
+               
+                .woman-image {
+                    width: 100%;
+                    height: 400px;
+                    object-fit: cover;
+                }
+            }
+            &:last-child {
+                img {  
+                    height: 294px;
+                    width: 100%;
+                    // display: none;
+                }
+            }
+        }
+
+        img.left-circles {
+            position: absolute;
+            left: 0px;
+            top: 20%;
+            width: 30px;
+        }
+    }
+
+    h2.art-text {
+        letter-spacing: 0.39em;
+        color: var(--artTextColor);
+        transform: rotate(-90deg);
+        font-weight: bold;
+        font-size: 35px;
+        line-height: 55px;
+        position: fixed;
+        top: 500px;
+        right: -30px;
+    }
+}
+
+@media(min-width: 420px) {
+    .banner {
+        .body {
+            .content{
+               
+
+                img.woman-image{
+                    height: 500px;
+                }
+            }
+        }
+    }
+}
+
+@media(min-width: 576px) {
+    .banner {
+        .body {
+            .content{
+               
+
+                img.woman-image{
+                    height: 620px;
+                }
+            }
+        }
+    }
+}
+
+@media(min-width: 642px) {
+    .banner {
+        .body {
+            .content{
+               
+
+                img.woman-image{
+                    height: 650px;
+                }
+            }
+        }
+    }
+}
+
+@include media-md {
+    .banner {
+        .body {
+            margin: 0px 20px;
+            .content{
+                &.second-content {
+                    margin-right: 10%;
+                }
+                .banner-card {
+                    height: 389px;
+                    // padding-left: 15%;
+                    // padding-right: 15%;
+                    padding: 2% 15% 2% 15%;
+
+                    h4 {
+                        font-size: 26px;
+                    }
+                    p{
+                        font-size: 18px;
+                    }
+
+                    .orange-pill {
+                        width: 63px;
+                        height: 5px;
+                    }
+                    .blue-pill {
+                        width: 30px;
+                        height: 5px;
+                    }
+                }
+
+                img.overlap {
+                    position: absolute;
+                    width: 352px;
+                    height: 328px;
+                    bottom: 40px;
+                    left: -170px;
+                    top: 300px
+                }
+
+                img.woman-image{
+                    height: 650px;
+                }
+
+                &.first-content{
+                    margin-left: 20%;
+                    margin-top: 15%;
+                    // margin-right: 50px;
+                }
+            }
+
+            img.left-circles {
+                top: 30%;
+                width: 50px;
+            }
+        }
+        
+        h2.art-text {
+            position: absolute;
+            font-size: 80px;
+            top: 90%;
+            right: 43.5%;
+        }
+    }
+}
+
+@include media-lg {
+    .banner {
+        .body {
+            .content{
+                .banner-card {
+                    height: 489px;
+                    padding-left: 15%;
+                    padding-right: 15%;
+
+                    h4 {
+                        font-size: 36px;
+                    }
+                    p{
+                        font-size: 24px;
+                    }
+
+                    .orange-pill {
+                        width: 83px;
+                    }
+                    .blue-pill {
+                        width: 37px;
+                    }
+                }
+
+                img.overlap {
+                    position: absolute;
+                    height: 428px;
+                    top: 350px
+                }
+
+                img.woman-image{
+                    height: 930px;
+                }
+
+                &.first-content{
+                    margin-top: 25%;
+                    // margin-right: 50px;
+                }
+            }
+        }
+        
+        h2.art-text {
+            font-size: 108px;
+            top: 140%;
+            right: 41.5%;
+        }
+    }
+}
+
+@media(min-width: 1250px){
+    .banner {
+        h2.art-text {
+            font-size: 108px;
+            top: 120%;
+        }
+    }
+}
