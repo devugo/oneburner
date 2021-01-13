@@ -6,42 +6,29 @@ nav {
             width: 100px;
         }
     }
+
     .nav-item {
         font-weight: 400;
+
+        &:hover a {
+            color: $primary-color !important;
+        }
 
         &:hover .oneburner-dropdown__menu {
             display: block;
         }
 
-        &:hover .oneburner-overlay {
-            background: rgba(0, 0, 0, 0.14);
-        }
-
         &:hover .dropdown-icon {
             transform: rotate(180deg);
         }
-
-        .oneburner-btn {
-            img {
-                margin-left: 16px;
-            }
-        }
-    }
-
-    .oneburner-overlay {
-        position: fixed;
-        height: 100vw;
-        width: 100%;
-        top: 371px;
-        left: 0;
     }
     
     .oneburner-dropdown__menu {
         position: fixed;
         display: none;
-        top: 80px;
+        top: 85px;
         height: 291px;
-        // background-color: $white;
+        background-color: $white;
         z-index: 5;
         width: 100%;
         left: 0;

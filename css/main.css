@@ -37,9 +37,23 @@ input:hover, input:active, input:focus, textarea:hover, textarea:active, textare
 
 .oneburner-btn {
   background-color: #462686;
-  padding: 15px 33px !important;
+  padding: 10px 33px !important;
   color: #fff !important;
   border-radius: 100px;
+}
+
+.oneburner-btn img {
+  margin-left: 16px;
+}
+
+.oneburner-overlay {
+  position: fixed;
+  height: 100vw;
+  width: 100%;
+  top: 120px;
+  left: 0;
+  background: rgba(0, 0, 0, 0.14);
+  display: none;
 }
 
 .padding-head {
@@ -54,6 +68,10 @@ input:hover, input:active, input:focus, textarea:hover, textarea:active, textare
   }
 }
 
+section {
+  padding: 30px;
+}
+
 nav {
   height: 120px;
 }
@@ -66,12 +84,12 @@ nav .nav-item {
   font-weight: 400;
 }
 
-nav .nav-item:hover .oneburner-dropdown__menu {
-  display: block;
+nav .nav-item:hover a {
+  color: #462686 !important;
 }
 
-nav .nav-item:hover .oneburner-overlay {
-  background: rgba(0, 0, 0, 0.14);
+nav .nav-item:hover .oneburner-dropdown__menu {
+  display: block;
 }
 
 nav .nav-item:hover .dropdown-icon {
@@ -79,23 +97,12 @@ nav .nav-item:hover .dropdown-icon {
           transform: rotate(180deg);
 }
 
-nav .nav-item .oneburner-btn img {
-  margin-left: 16px;
-}
-
-nav .oneburner-overlay {
-  position: fixed;
-  height: 100vw;
-  width: 100%;
-  top: 371px;
-  left: 0;
-}
-
 nav .oneburner-dropdown__menu {
   position: fixed;
   display: none;
-  top: 80px;
+  top: 85px;
   height: 291px;
+  background-color: #fff;
   z-index: 5;
   width: 100%;
   left: 0;
@@ -292,6 +299,46 @@ nav .oneburner-dropdown__menu .body .content .details p {
     bottom: -8px;
     height: 40px;
     width: 60px;
+  }
+}
+
+.hero h1 {
+  font-size: 25px;
+  font-weight: bold;
+}
+
+.hero .content.left-side {
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+
+.hero .content.left-side p {
+  margin: 20px 0;
+}
+
+.hero .content.right-side {
+  display: none;
+}
+
+@media screen and (min-width: 768px) {
+  .hero h1 {
+    font-size: 45px;
+    font-weight: bold;
+  }
+  .hero .content.right-side {
+    display: block;
   }
 }
 /*# sourceMappingURL=main.css.map */

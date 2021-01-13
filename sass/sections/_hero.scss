@@ -1,0 +1,35 @@
+.hero {
+    h1 {
+        font-size: 25px;
+        font-weight: bold;
+    }
+    .content.left-side {
+        // margin-top: 261px;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+
+        p {
+            margin: 20px 0;
+        }
+    }
+
+    .content.right-side {
+        display: none;
+    }
+}
+
+@include media-md{
+    .hero {
+        h1 {
+            font-size: 45px;
+            font-weight: bold;
+        }
+    
+        .content.right-side {
+            display: block;
+        }
+    }
+}
