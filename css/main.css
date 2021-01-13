@@ -61,15 +61,18 @@ input:hover, input:active, input:focus, textarea:hover, textarea:active, textare
   padding-right: 20px;
 }
 
+section {
+  padding: 40px 20px;
+}
+
 @media screen and (min-width: 768px) {
   .padding-head {
     padding-left: 78px;
     padding-right: 78px;
   }
-}
-
-section {
-  padding: 50px 30px;
+  section {
+    padding: 70px 30px;
+  }
 }
 
 nav {
@@ -442,5 +445,28 @@ nav .oneburner-dropdown__menu .body .content .details p {
 .intro .bottom-content .left-side p {
   font-size: 20px;
   margin-top: 20px;
+}
+
+.more .text {
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.more .text h2 {
+  font-size: 40px;
+  font-weight: bold;
+}
+
+.more .text p {
+  font-size: 20px;
 }
 /*# sourceMappingURL=main.css.map */

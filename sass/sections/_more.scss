@@ -1,0 +1,17 @@
+.more {
+    .text {
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+
+        h2 {
+            font-size: 40px;
+            font-weight: bold;
+        }
+
+        p {
+            font-size: 20px;
+        }
+    }
+}
