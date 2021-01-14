@@ -35,6 +35,14 @@ input:hover, input:active, input:focus, textarea:hover, textarea:active, textare
   border: 1.5px solid #7837F8;
 }
 
+.padding-r-1 {
+  padding-right: 0;
+}
+
+.padding-l-1 {
+  padding-left: 0;
+}
+
 .oneburner-btn {
   background-color: #462686;
   padding: 10px 33px !important;
@@ -234,6 +242,7 @@ footer.login-section .content {
   position: absolute;
   top: 0;
   left: 0;
+  display: none;
 }
 
 .hero.enterprise .left-side {
@@ -254,8 +263,11 @@ footer.login-section .content {
   .hero.enterprise {
     margin-bottom: 150px;
   }
+  .hero.enterprise .bg {
+    display: block;
+  }
   .hero.enterprise .left-side {
-    margin-top: 50px;
+    margin-top: 70px;
   }
   .hero.enterprise .left-side p {
     margin: 30px 0;
@@ -732,7 +744,7 @@ footer.login-section .content {
 .awards {
   background-color: #7837F8;
   color: #fff;
-  padding-bottom: 250px;
+  padding-bottom: 300px;
 }
 
 .awards .body {
@@ -1082,13 +1094,20 @@ footer.login-section .content {
           box-shadow: 0px 0px 30px 10px rgba(0, 0, 0, 0.08);
 }
 
-.contact .left-side .form-group input, .contact .left-side .form-group select {
+.contact .left-side .form-group input, .contact .left-side .form-group select, .contact .left-side .form-group button {
   height: 48px;
   border-color: #01001D;
 }
 
-.contact .left-side .form-group input:active, .contact .left-side .form-group input:focus, .contact .left-side .form-group input:hover, .contact .left-side .form-group select:active, .contact .left-side .form-group select:focus, .contact .left-side .form-group select:hover {
+.contact .left-side .form-group input:active, .contact .left-side .form-group input:focus, .contact .left-side .form-group input:hover, .contact .left-side .form-group select:active, .contact .left-side .form-group select:focus, .contact .left-side .form-group select:hover, .contact .left-side .form-group button:active, .contact .left-side .form-group button:focus, .contact .left-side .form-group button:hover {
   border-color: inherit;
+  outline: none;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+
+.contact .left-side .form-group textarea {
+  border-color: #01001D;
 }
 
 .contact .left-side .form-group button:active, .contact .left-side .form-group button:focus, .contact .left-side .form-group button:hover, .contact .left-side .form-group select:active, .contact .left-side .form-group select:focus, .contact .left-side .form-group select:hover {

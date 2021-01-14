@@ -5,7 +5,7 @@
     }
     background-color: $secondary-color;
     color: $white;
-    padding-bottom: 250px;
+    padding-bottom: 300px;
 
     p {
         font-size: 16px;
@@ -92,13 +92,6 @@
                 }
             }
         }
-
-        .floating {
-            
-            &-content {
-                // padding-left: 200px;
-            }
-        }
     }
     
 }
@@ -107,7 +100,7 @@
     .awards {
     
         .right-side {
-            margin-left: 100px;;
+            margin-left: 100px;
         }
     }
     

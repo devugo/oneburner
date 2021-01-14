@@ -7,13 +7,21 @@
 
         .form-group {
 
-            input, select {
+            input, select, button {
                 height: 48px;
                 border-color: $black1;
     
                 &:active, &:focus, &:hover {
                     border-color: inherit;
+                    outline: none;
+                    box-shadow: none;
+                    // -webkit-box-shadow: inset 0 1px 1px rgba(255, 255, 255, 0.075),0 0 8px rgba(0, 0, 0,.6);
+                    // box-shadow: inset 0 1px 1px rgba(255, 255, 255, 0.075),0 0 8px rgba(0, 0, 0,.6);
                 }
+            }
+
+            textarea {
+                border-color: $black1;
             }
 
 

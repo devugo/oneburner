@@ -33,6 +33,7 @@
             position: absolute;
             top: 0;
             left:0;
+            display: none;
         }
 
         .left-side {
@@ -56,8 +57,12 @@
         &.enterprise {
             margin-bottom: 150px;
 
+            .bg {
+                display: block;
+            }
+
             .left-side {
-                margin-top: 50px;
+                margin-top: 70px;
 
                 p {
                     margin: 30px 0;
