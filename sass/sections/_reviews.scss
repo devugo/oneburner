@@ -1,0 +1,72 @@
+.reviews {
+    padding-bottom: 240px;
+    .content {
+        position: relative;
+
+        .line {
+            position: absolute;
+            top: 200px;
+            height: 1px;
+            background: rgba(51, 51, 51, 0.2);
+            width: 100%;
+        }
+
+        .comment {
+            display: flex;
+            justify-content: center;
+
+            p {
+                max-width: 720px;
+            }
+        }
+
+        .single {
+            position: absolute;
+            top: 130px;
+            display: flex;;
+            width: 100%;
+            justify-content: center;
+            .profile-card {
+                background-color: $white;
+                width: 400px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+
+                .about {
+                    text-align: left;
+                    margin-left: 10px;
+
+                    h4 {
+                        font-weight: bold;
+                    }
+    
+                    h4, p {
+                        font-size: 16px;
+                    }
+                }
+            }
+        }
+    }
+   
+}
+
+@include media-md {
+    .reviews {
+        .content {
+    
+            .single {
+                .profile-card {
+    
+                    .about {
+        
+                        h4, p {
+                            font-size: 20px;
+                        }
+                    }
+                }
+            }
+        }
+       
+    }
+}

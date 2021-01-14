@@ -1,4 +1,7 @@
 .more {
+    .content {
+        margin-bottom: 20px;
+    }
     .text {
         height: 100%;
         display: flex;
@@ -6,12 +9,34 @@
         justify-content: center;
 
         h2 {
-            font-size: 40px;
+            font-size: 30px;
             font-weight: bold;
         }
 
         p {
-            font-size: 20px;
+            font-size: 17px;
+        }
+    }
+}
+
+@include media-md {
+    .more {
+        .text {
+            // margin
+    
+            h2 {
+                font-size: 40px;
+            }
+    
+            p {
+                font-size: 20px;
+            }
+        }
+        .right-side.text {
+            margin-left: 50px;
+        }
+        .left-side.text {
+            margin-right: 50px;
         }
     }
 }

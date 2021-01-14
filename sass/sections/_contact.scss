@@ -1,0 +1,93 @@
+.contact {
+    background-color: $bg-color;
+    .left-side {
+        background-color: $white;
+        padding: 20px;
+        box-shadow: 0px 0px 30px 10px rgba(0, 0, 0, 0.08);
+
+        .form-group {
+
+            input, select {
+                height: 48px;
+                border-color: $black1;
+    
+                &:active, &:focus, &:hover {
+                    border-color: inherit;
+                }
+            }
+
+
+            button, select {
+                &:active, &:focus, &:hover {
+                    border-color: inherit;
+                }
+            }
+            &.phone {
+
+
+                .content {
+                    display: flex;
+
+                    .dropdown-menu {
+                        min-width: 100% !important;
+                    }
+
+                    .dropdown-toggle::after {
+                        display: none;
+                    }
+
+                    button {
+                        height: 48px;
+                        border: 1px solid $black1;
+                        border-right-color: grey;
+                        border-top-right-radius: 0;
+                        border-bottom-right-radius: 0;
+                    }
+
+                    input {
+                        border-top-left-radius: 0;
+                        border-bottom-left-radius: 0;
+                        border-left: 0;
+                    }
+                }
+            }
+        }
+    }
+
+    .right-side {
+        padding: 20px;
+
+        p.contact-title {
+            font-weight: bold;
+        }
+        ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+        }
+    }
+}
+
+@include media-md {
+    .contact {
+        .left-side {
+            padding: 40px 0px;
+        }
+
+        .right-side {
+            margin-left: 50px;
+            padding: 40px 0px;
+        }
+    }
+}
+
+@include media-lg {
+    .contact {
+        .left-side {
+            padding: 80px 120px;
+        }
+        .right-side {
+            padding: 80px 0;
+        }
+    }
+}

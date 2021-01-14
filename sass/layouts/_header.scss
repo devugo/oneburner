@@ -1,10 +1,16 @@
 nav {
     height: 120px;
+    background-color: $white;
+    z-index: 2;
 
     .navbar-brand {
         img {
             width: 100px;
         }
+    }
+
+    .navbar-collapse {
+        background-color: $white;
     }
 
     .nav-item {
@@ -26,8 +32,7 @@ nav {
     .oneburner-dropdown__menu {
         position: fixed;
         display: none;
-        top: 85px;
-        height: 291px;
+        top: 75px;
         background-color: $white;
         z-index: 5;
         width: 100%;
@@ -38,7 +43,6 @@ nav {
             display: flex;
             height: 100%;
             align-items: center;
-            margin-right: 152px;
             .content {
                 display: flex;
                 align-items: flex-start;
@@ -62,6 +66,15 @@ nav {
 @include media-md {
     nav {
     
+        .oneburner-dropdown__menu {
+            // top: 85px;
+            top: 82px;
+            height: 291px;
+
+            .body {
+                margin-right: 152px;
+            }
+        }
         .navbar-brand {
             img {
                 width: 180px;
