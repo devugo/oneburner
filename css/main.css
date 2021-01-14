@@ -1002,7 +1002,7 @@ footer.login-section .content {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  min-height: calc(100vh - 100px);
+  min-height: calc(100vh - 150px);
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -1029,6 +1029,10 @@ footer.login-section .content {
   right: 8px;
   top: 40px;
   width: 20px;
+}
+
+.login .body form .form-group input {
+  border-color: #01001D;
 }
 
 .login .body form button {
