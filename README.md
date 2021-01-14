@@ -3,7 +3,7 @@ ONEBURNER LANDING PAGE WEBSITE
 
 Multiple pages website for Oneburner company
 
-### Live URLs
+### Live Pages URLs
 
 - [home](https://oneburner-by-devugo.netlify.app/).
 - [contact](https://oneburner-by-devugo.netlify.app/contact.html).
