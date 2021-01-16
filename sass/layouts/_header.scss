@@ -1,5 +1,4 @@
 nav {
-    height: 120px;
     background-color: $white;
     z-index: 2;
 
@@ -14,7 +13,13 @@ nav {
     }
 
     .nav-item {
-        font-weight: 400;
+
+        a{
+            font-weight: 400;
+            font-size: 13px;
+            line-height: 30px;
+            color: $black2;
+        }
 
         &:hover a {
             color: $primary-color !important;
@@ -27,22 +32,29 @@ nav {
         &:hover .dropdown-icon {
             transform: rotate(180deg);
         }
+
+        .dropdown-icon {
+            margin-left: 4px;
+        }
     }
     
     .oneburner-dropdown__menu {
         position: fixed;
         display: none;
-        top: 75px;
+        top: 70px;
         background-color: $white;
         z-index: 5;
         width: 100%;
         left: 0;
         box-shadow: 0 20px 20px -6px rgba(0, 0, 0, .2);
+        height: 320px;
 
         .body {
             display: flex;
             height: 100%;
             align-items: center;
+            padding-left: 15px;
+            padding-right: 15px;
             .content {
                 display: flex;
                 align-items: flex-start;
@@ -65,23 +77,91 @@ nav {
 
 @include media-md {
     nav {
-    
+
+        .nav-item {
+            // margin: 0 32px;
+
+            a{
+                font-size: 14px;
+            }
+        }
         .oneburner-dropdown__menu {
-            // top: 85px;
-            top: 82px;
-            height: 291px;
 
             .body {
-                margin-right: 152px;
+                margin-right: 100px;
+                padding-left: 0;
+                padding-right: 0;
+            }
+        }
+    }
+}
+
+@include media-md-bootstrap {
+    nav {
+        height: 100px;
+
+        .nav-item {
+            margin: 0 12px;
+
+            .dropdown-icon {
+                margin-left: -4px;
             }
         }
         .navbar-brand {
             img {
-                width: 180px;
+                width: 130px;
             }
         }
+
+        .oneburner-dropdown__menu { 
+            top: 70px;
+            height: 250px;
+            
+            .body {
+                margin-right: 152px;
+            }
+        }
+    }
+}
+
+@include media-lg {
+    nav {
+        .nav-item {
+
+            a{
+                font-size: 16px;
+            }
+        }
+        .navbar-brand {
+            img {
+                width: 150px;
+            }
+        }
+    }
+}
+
+
+@include media-lgg {
+    nav {
+
         .nav-item {
             margin: 0 16px;
+        }
+    }
+}
+
+@include media-xl {
+    nav {
+        .nav-item {
+
+            a{
+                font-size: 20px;
+            }
+        }
+        .navbar-brand {
+            img {
+                width: 270px;
+            }
         }
     }
 }

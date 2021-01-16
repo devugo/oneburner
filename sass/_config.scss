@@ -5,6 +5,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap" rel="stylesheet');
 
 @font-face { font-family: Sofia; src: url('/fonts/Sofia/Sofia\ Pro\ Regular\ Az.otf'); } 
+// @font-face { font-family: SofiaPro; src: url('/fonts/Sofia\ Pro/sofiapro-light.otf'); } 
 
 html {
     scroll-behavior: smooth;
@@ -14,10 +15,6 @@ html {
     margin: 0;
     padding: 0;
     font-family: 'Sofia', sans-serif;
-}
-
-.title {
-    font-family: 'Playfair Display', serif;
 }
 
 @mixin transition-ease {
@@ -60,6 +57,13 @@ html {
         @content;
     }
 }
+
+@mixin media-lgg {
+    @media screen and (min-width: 1300px){
+        @content;
+    }
+}
+
 @mixin media-xl {
     @media screen and (min-width: 1600px){
         @content;
