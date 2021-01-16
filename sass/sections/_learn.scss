@@ -12,14 +12,8 @@
             justify-content: center;
 
             h2 {
-                font-size: 25px;
-                max-width: 700px;
+                max-width: 750px;
                 margin-bottom: 50px;
-            }
-
-            p {
-                font-size: 18px;
-                margin: 10px 0 25px 0;
             }
     
         }
@@ -29,20 +23,5 @@
 @include media-md {
     .learn {
         height: 300px;
-    
-        .container {
-    
-            .content {
-    
-                h2 {
-                    font-size: 40px;
-                }
-    
-                p {
-                    font-size: 24px;
-                }
-        
-            }
-        }
     }
 }

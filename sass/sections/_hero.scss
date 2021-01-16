@@ -13,7 +13,7 @@
             text-align: center;
     
             p {
-                margin: 20px 0;
+                margin: 30px 0;
                 max-width: 460px;
             }
 
@@ -27,20 +27,28 @@
 
     &.enterprise {
         h1 {
-            max-width: 720px;
+            max-width: 770px;
         }
-        position: relative;
+        .container{
+            position: relative;
 
-        .bg {
-            position: absolute;
-            top: 0;
-            left:0;
-            display: none;
-        }
+            .bg {
+                position: absolute;
+                top: -50px;
+                left:0;
+                display: none;
+            }
+        }   
+       
 
         .left-side {
+            display: flex;
             align-items: center;
             text-align: center;
+
+            p {
+                max-width: inherit;
+            }
         }
     }
 }
@@ -61,13 +69,45 @@
 
         &.enterprise {
             margin-bottom: 150px;
-
-            .bg {
-                display: block;
+            .container{
+    
+                .bg {
+                    top: -70px;
+                    display: block;
+                }
             }
 
             .left-side {
                 margin-top: 70px;
+                align-items: center;
+                text-align: center;
+            }
+        }
+    }
+}
+
+@include media-lg{
+    .hero {
+
+        &.enterprise {
+            
+            .left-side {
+                margin-top: 60px;
+            }
+        }
+    }
+}
+
+@include media-lgg{
+    .hero {
+
+        &.enterprise {
+            h1 {
+                max-width: 900px;
+            }
+            
+            .left-side {
+                margin-top: 80px;
             }
         }
     }

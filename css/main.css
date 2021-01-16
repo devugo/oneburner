@@ -18,15 +18,27 @@ html {
 
 h1 {
   font-weight: 700;
+  font-size: 35px;
+  line-height: 40px;
+}
+
+h2 {
+  font-weight: 700;
   font-size: 30px;
   line-height: 40px;
   color: #333;
 }
 
-h2 {
+h3 {
   font-weight: 400;
   font-size: 25px;
   line-height: 30px;
+}
+
+h4 {
+  font-weight: 700;
+  font-size: 13px;
+  color: #333;
 }
 
 p {
@@ -98,10 +110,17 @@ section {
 
 @media screen and (min-width: 768px) {
   h1 {
-    font-size: 30px;
+    font-size: 40px;
+    line-height: 42px;
   }
   h2 {
+    font-size: 30px;
+  }
+  h3 {
     font-size: 26px;
+  }
+  h4 {
+    font-size: 14px;
   }
   p {
     font-size: 18px;
@@ -132,12 +151,19 @@ section {
 
 @media screen and (min-width: 1024px) {
   h1 {
+    font-size: 50px;
+    line-height: 50px;
+  }
+  h2 {
     font-size: 40px;
     line-height: 45px;
   }
-  h2 {
+  h3 {
     font-size: 38px;
     line-height: 48px;
+  }
+  h4 {
+    font-size: 16px;
   }
   p {
     line-height: 32px;
@@ -155,10 +181,14 @@ section {
 
 @media screen and (min-width: 1300px) {
   h1 {
+    font-size: 60px;
+    line-height: 60px;
+  }
+  h2 {
     font-size: 45px;
     line-height: 50px;
   }
-  h2 {
+  h3 {
     font-size: 40px;
   }
   .padding-head {
@@ -178,6 +208,10 @@ section {
 
 @media screen and (min-width: 1600px) {
   h1 {
+    font-size: 72px;
+    line-height: 72px;
+  }
+  h2 {
     font-size: 50px;
     line-height: 60px;
   }
@@ -256,7 +290,11 @@ nav .oneburner-dropdown__menu {
   left: 0;
   -webkit-box-shadow: 0 20px 20px -6px rgba(0, 0, 0, 0.2);
           box-shadow: 0 20px 20px -6px rgba(0, 0, 0, 0.2);
-  height: 400px;
+  height: 330px;
+}
+
+nav .oneburner-dropdown__menu.hide {
+  display: none;
 }
 
 nav .oneburner-dropdown__menu .body {
@@ -284,15 +322,6 @@ nav .oneburner-dropdown__menu .body .content .details {
   margin-left: 15px;
 }
 
-nav .oneburner-dropdown__menu .body .content .details h4 {
-  font-size: 18px;
-  font-weight: bold;
-}
-
-nav .oneburner-dropdown__menu .body .content .details p {
-  font-size: 14px;
-}
-
 @media screen and (min-width: 768px) {
   nav .nav-item a {
     font-size: 14px;
@@ -317,11 +346,14 @@ nav .oneburner-dropdown__menu .body .content .details p {
   nav .nav-item .dropdown-icon {
     margin-left: -4px;
   }
+  nav .nav-item .oneburner-btn {
+    margin-top: -5px;
+  }
   nav .navbar-brand img {
     width: 130px;
   }
   nav .oneburner-dropdown__menu {
-    top: 70px;
+    top: 73.6px;
     height: 250px;
   }
   nav .oneburner-dropdown__menu .body {
@@ -400,7 +432,7 @@ footer.login-section .content {
 }
 
 .hero .content.left-side p {
-  margin: 20px 0;
+  margin: 30px 0;
   max-width: 460px;
 }
 
@@ -409,26 +441,33 @@ footer.login-section .content {
           box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.15);
 }
 
-.hero.enterprise {
+.hero.enterprise h1 {
+  max-width: 770px;
+}
+
+.hero.enterprise .container {
   position: relative;
 }
 
-.hero.enterprise h1 {
-  max-width: 720px;
-}
-
-.hero.enterprise .bg {
+.hero.enterprise .container .bg {
   position: absolute;
-  top: 0;
+  top: -50px;
   left: 0;
   display: none;
 }
 
 .hero.enterprise .left-side {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
   text-align: center;
+}
+
+.hero.enterprise .left-side p {
+  max-width: inherit;
 }
 
 @media screen and (min-width: 768px) {
@@ -444,11 +483,31 @@ footer.login-section .content {
   .hero.enterprise {
     margin-bottom: 150px;
   }
-  .hero.enterprise .bg {
+  .hero.enterprise .container .bg {
+    top: -70px;
     display: block;
   }
   .hero.enterprise .left-side {
     margin-top: 70px;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    text-align: center;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .hero.enterprise .left-side {
+    margin-top: 60px;
+  }
+}
+
+@media screen and (min-width: 1300px) {
+  .hero.enterprise h1 {
+    max-width: 900px;
+  }
+  .hero.enterprise .left-side {
+    margin-top: 80px;
   }
 }
 
@@ -582,7 +641,7 @@ footer.login-section .content {
           align-items: center;
 }
 
-.intro .bottom-content .left-side h2 {
+.intro .bottom-content .left-side h3 {
   max-width: 450px;
 }
 
@@ -731,7 +790,7 @@ footer.login-section .content {
   color: #fff;
 }
 
-.skip .container .content h1 {
+.skip .container .content h2 {
   color: #fff;
 }
 
@@ -1072,6 +1131,365 @@ footer.login-section .content {
     width: 270px;
   }
   .footer .content ul li a {
+    font-size: 16px;
+  }
+}
+
+.awards {
+  background-color: #7837F8;
+  color: #fff;
+  padding-bottom: 250px;
+}
+
+.awards .body {
+  position: relative;
+  height: 100%;
+}
+
+.awards h3 {
+  margin-bottom: 40px;
+}
+
+.awards .right-side ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.awards .right-side ul li {
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 25px;
+  margin-bottom: 10px;
+}
+
+.awards .right-side ul li img {
+  width: 25px;
+  margin-right: 10px;
+}
+
+.awards .floating {
+  position: absolute;
+  width: 100%;
+  left: 0;
+  margin-top: 90px;
+  text-align: center;
+}
+
+.awards .floating-content {
+  padding: 30px 10px;
+  background: #fff;
+  -webkit-box-shadow: 0px 20px 40px rgba(51, 51, 51, 0.13);
+          box-shadow: 0px 20px 40px rgba(51, 51, 51, 0.13);
+  border-radius: 10px;
+  color: #333;
+  max-width: 1139px;
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.awards .floating-content p {
+  margin-top: -30px;
+}
+
+.awards .floating-content img {
+  width: 150px;
+}
+
+@media screen and (min-width: 610px) {
+  .awards {
+    padding-bottom: 200px;
+  }
+  .awards .floating {
+    margin-top: 80px;
+    text-align: inherit;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .awards .right-side {
+    margin-left: 70px;
+  }
+  .awards .right-side ul li {
+    font-size: 18px;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .awards .right-side {
+    margin-left: 100px;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .awards .right-side ul li {
+    line-height: 32px;
+  }
+}
+
+@media screen and (min-width: 1600px) {
+  .awards .right-side ul li {
+    font-size: 20px;
+  }
+}
+
+.regional {
+  background-color: rgba(204, 204, 204, 0.1);
+}
+
+.regional h3 {
+  margin-bottom: 20px;
+}
+
+.regional .paragraph {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-bottom: 40px;
+}
+
+.regional .paragraph p {
+  color: #454545;
+  max-width: 900px;
+}
+
+.regional img {
+  max-width: 100%;
+}
+
+@media screen and (min-width: 768px) {
+  .regional .paragraph {
+    margin-bottom: 70px;
+  }
+}
+
+.reviews {
+  padding-bottom: 240px;
+}
+
+.reviews .content {
+  position: relative;
+}
+
+.reviews .content .line {
+  position: absolute;
+  top: 270px;
+  height: 1px;
+  background: rgba(51, 51, 51, 0.2);
+  width: 100%;
+}
+
+.reviews .content .comment {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.reviews .content .comment p {
+  max-width: 720px;
+}
+
+.reviews .content .comment p.big {
+  font-weight: 300;
+}
+
+.reviews .content .single {
+  position: absolute;
+  top: 200px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.reviews .content .single .profile-card {
+  background-color: #fff;
+  width: 400px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.reviews .content .single .profile-card .about {
+  text-align: left;
+  margin-left: 10px;
+}
+
+.reviews .content .single .profile-card .about p.name {
+  font-weight: bold;
+}
+
+@media screen and (min-width: 768px) {
+  .reviews .content .comment p {
+    font-size: 18px;
+  }
+}
+
+.learn {
+  background-color: rgba(204, 204, 204, 0.1);
+}
+
+.learn .container {
+  height: 100%;
+}
+
+.learn .container .content {
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.learn .container .content h2 {
+  max-width: 750px;
+  margin-bottom: 50px;
+}
+
+@media screen and (min-width: 768px) {
+  .learn {
+    height: 300px;
+  }
+}
+
+.login {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  min-height: calc(100vh - 150px);
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 10px;
+}
+
+.login .body {
+  width: 500px;
+  padding: 40px 20px 40px 20px;
+  height: 100%;
+  margin: 0 auto;
+}
+
+.login .body p {
+  color: #454545;
+}
+
+.login .body form .form-group {
+  position: relative;
+}
+
+.login .body form .form-group .icon {
+  position: absolute;
+  right: 8px;
+  top: 40px;
+  width: 20px;
+}
+
+.login .body form .form-group label {
+  font-size: 11px;
+}
+
+.login .body form .form-group input {
+  border-color: #01001D;
+}
+
+.login .body form button {
+  width: 100%;
+}
+
+.login .body .forgot-password a {
+  color: #462686;
+}
+
+.login .body .or-sign {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+}
+
+.login .body .or-sign .child {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+}
+
+.login .body .or-sign .child .signin-icon {
+  width: 30px;
+}
+
+.login .body .or-sign .child:nth-child(2) {
+  margin-left: -30px;
+}
+
+.login .body .or-sign .child:first-child {
+  -webkit-box-flex: 2;
+      -ms-flex: 2;
+          flex: 2;
+}
+
+@media screen and (min-width: 768px) {
+  .login .body form .form-group label {
+    font-size: 14px;
+  }
+  .login .body .or-sign {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    width: 70%;
+  }
+  .login .body .or-sign .child {
+    -webkit-box-flex: 1;
+        -ms-flex: 1;
+            flex: 1;
+  }
+  .login .body .or-sign .child:nth-child(2) {
+    margin-left: 20px;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .login .body form .form-group label {
+    font-size: 15px;
+  }
+}
+
+@media screen and (min-width: 1600px) {
+  .login .body form .form-group label {
     font-size: 16px;
   }
 }

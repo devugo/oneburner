@@ -15,7 +15,7 @@ for(var i = 0; i<elements.length; i++){
 }
 
 
-// FOOTER
+// FOOTER TOGGEABLE Menu
 var dropdown = document.getElementsByClassName("footer-dropdown");
 var i;
 
@@ -24,11 +24,7 @@ for (i = 0; i < dropdown.length; i++) {
         this.classList.toggle("active");
         var dropdownContent = this.nextElementSibling;
         dropdownContent.classList.toggle("active");
-        // if (dropdownContent.style.display === "block") {
-        //     dropdownContent.style.display = "none";
-        // } else {
-        //     dropdownContent.style.display = "block";
-        // }
+        
     });
 }
 
@@ -51,3 +47,23 @@ window.onclick = function(event) {
         }
     }
 }
+
+
+// window.onscroll = function(e) {
+    // print "false" if direction is down and "true" if up
+    // let scroll = this.oldScroll > this.scrollY;
+    // console.log(scroll);
+
+    // if(!scroll){
+    //     // alert('got here')
+    //     let getWideMenu = document.getElementById('oneburner-dropdown__menu');
+    //     console.log(getWideMenu);
+    //     getWideMenu.classList.toggle('hide');
+    //     // getWideMenu.style.display = 'none';
+    // }
+    // this.oldScroll = this.scrollY;
+
+//     let getWideMenu = document.getElementById('big');
+//     console.log(getWideMenu)
+//     console.log(getWideMenu.scrollY);
+// }

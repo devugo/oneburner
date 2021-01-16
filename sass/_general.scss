@@ -2,15 +2,27 @@
 
 h1 {
     font-weight: 700;
+    font-size: 35px;
+    line-height: 40px;
+}
+
+h2 {
+    font-weight: 700;
     font-size: 30px;
     line-height: 40px;
     color: $black3;
 }
 
-h2 {
+h3 {
     font-weight: 400;
     font-size: 25px;
     line-height: 30px;
+}
+
+h4 {
+    font-weight: 700;
+    font-size: 13px;
+    color: $black3;
 }
 
 p {
@@ -86,11 +98,20 @@ section {
 @include media-md {
     // TExt styles
     h1 {
-        font-size: 30px;
+        font-size: 40px;
+        line-height: 42px;
     }
 
     h2 {
+        font-size: 30px;
+    }
+
+    h3 {
         font-size: 26px;
+    }
+
+    h4 {
+        font-size: 14px;
     }
 
     p {
@@ -129,13 +150,22 @@ section {
 
 @include media-lg {
     h1 {
+        font-size: 50px;
+        line-height: 50px;
+    }
+
+    h2 {
         font-size: 40px;
         line-height: 45px;
     }
 
-    h2 {
+    h3 {
         font-size: 38px;
         line-height: 48px;
+    }
+
+    h4 {
+        font-size: 16px;
     }
 
     p {
@@ -157,11 +187,16 @@ section {
 
 @include media-lgg {
     h1 {
+        font-size: 60px;
+        line-height: 60px;
+    }
+
+    h2 {
         font-size: 45px;
         line-height: 50px;
     }
 
-    h2 {
+    h3 {
         font-size: 40px;
     }
 
@@ -185,6 +220,10 @@ section {
 
 @include media-xl {
     h1 {
+        font-size: 72px;
+        line-height: 72px;
+    }
+    h2 {
         font-size: 50px;
         line-height: 60px;
     }
