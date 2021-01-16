@@ -12,13 +12,16 @@
             justify-content: center;
             color: $white;
 
-            h2 {
-                font-size: 25px;
+            h1 {
+                color: $white;
             }
 
             p {
-                font-size: 18px;
                 margin: 10px 0 25px 0;
+            }
+
+            button {
+                box-shadow: 10px 10px 24px rgba(35, 9, 88, 0.15);
             }
     
         }
@@ -28,19 +31,34 @@
 @include media-md {
     .skip {
         height: 300px;
-    
+    }
+}
+
+@include media-lg {
+    .skip {
+        height: 400px;
+
         .container {
     
             .content {
-    
-                h2 {
-                    font-size: 40px;
+                button {
+                    font-size: 14px;
                 }
+            }
+        }
+    }
+}
+
+@include media-xl {
+    .skip {
+        height: 510px;
+
+        .container {
     
-                p {
-                    font-size: 24px;
+            .content {
+                button {
+                    font-size: 18px;
                 }
-        
             }
         }
     }
