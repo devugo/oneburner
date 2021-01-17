@@ -650,6 +650,18 @@ footer.login-section .content {
   margin-top: 10px;
 }
 
+.intro .bottom-content .right-side img {
+  -webkit-filter: brightness(0.9);
+          filter: brightness(0.9);
+  -webkit-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
+}
+
+.intro .bottom-content .right-side img:hover {
+  -webkit-filter: brightness(1);
+          filter: brightness(1);
+}
+
 @media screen and (min-width: 768px) {
   .intro .navs {
     height: 59px;

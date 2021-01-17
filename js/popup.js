@@ -1,6 +1,6 @@
 
 $('.with-caption').magnificPopup({
-    type: 'image',
+    type: 'iframe',
     closeBtnInside: false,
     mainClass: 'mfp-with-zoom mfp-img-mobile',
 

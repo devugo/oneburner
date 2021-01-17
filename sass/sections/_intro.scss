@@ -70,6 +70,16 @@
                 margin-top: 10px;
             }
         }
+
+        .right-side {
+            img {
+                filter: brightness(0.9);
+                @include transition-ease;
+                &:hover {
+                    filter: brightness(1);
+                }
+            }
+        }
     }
 
     
