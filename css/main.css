@@ -52,7 +52,7 @@ p.big {
 }
 
 p.small {
-  font-size: 11px;
+  font-size: 13px;
 }
 
 input, textarea {
@@ -250,7 +250,7 @@ nav {
 }
 
 nav .navbar-brand img {
-  width: 100px;
+  width: 130px;
 }
 
 nav .navbar-collapse {
@@ -351,7 +351,7 @@ nav .oneburner-dropdown__menu .body .content .details {
     margin-top: -5px;
   }
   nav .navbar-brand img {
-    width: 130px;
+    width: 140px;
   }
   nav .oneburner-dropdown__menu {
     top: 73.6px;
@@ -592,7 +592,7 @@ footer.login-section .content {
 
 .intro .navs li a {
   color: #454545;
-  font-size: 12px;
+  font-size: 13px;
   display: block;
   width: 100%;
   height: 100%;
@@ -1035,7 +1035,7 @@ footer.login-section .content {
 }
 
 .footer .content .logo {
-  width: 100px;
+  width: 130px;
   margin-bottom: 30px;
 }
 
@@ -1059,7 +1059,7 @@ footer.login-section .content {
 
 .footer .content ul li a {
   color: rgba(1, 0, 29, 0.6);
-  font-size: 11px;
+  font-size: 13px;
 }
 
 .footer .content.toggleable {
@@ -1119,7 +1119,7 @@ footer.login-section .content {
 
 @media screen and (min-width: 992px) {
   .footer .content .logo {
-    width: 130px;
+    width: 140px;
   }
 }
 
@@ -1145,6 +1145,7 @@ footer.login-section .content {
 }
 
 .awards {
+  margin-bottom: 40px;
   background-color: #7837F8;
   color: #fff;
   padding-bottom: 250px;
@@ -1216,9 +1217,10 @@ footer.login-section .content {
   width: 150px;
 }
 
-@media screen and (min-width: 610px) {
+@media screen and (min-width: 561px) {
   .awards {
     padding-bottom: 200px;
+    margin-bottom: 0;
   }
   .awards .floating {
     margin-top: 80px;
