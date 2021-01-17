@@ -1,18 +1,26 @@
 AOS.init();
 
 // MEGA MENU TOGGLE
-// let elements = document.getElementsByClassName(' oneburner-dropdown');
+let elements = document.getElementsByClassName(' oneburner-dropdown');
 
-// for(var i = 0; i<elements.length; i++){
-//     let element = elements[i];
-//     element.addEventListener('mouseenter', function(){
-//         document.getElementById('oneburner-overlay').style.display = 'block';
-//     })
+for(var i = 0; i<elements.length; i++){
+    let element = elements[i];
+    // element.addEventListener('mouseenter', function(){
+    //     console.log(element)
+    //     document.getElementById('oneburner-overlay').style.display = 'block';
+    // })
 
-//     element.addEventListener('mouseleave', function(){
-//         document.getElementById('oneburner-overlay').style.display = 'none';
-//     })
-// }
+    // element.addEventListener('mouseleave', function(){
+    //     console.log(element)
+    //     document.getElementById('oneburner-overlay').style.display = 'none';
+    // })
+
+    $('#oneburner-dropdown').hover(function() {
+        $('#oneburner-overlay').css('display', 'block');
+    }, function() {
+        $('#oneburner-overlay').css('display', 'none');
+    })
+}
 
 
 // FOOTER TOGGEABLE LINKS
