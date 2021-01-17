@@ -8,15 +8,15 @@ $('.with-caption').magnificPopup({
         verticalFit: true,
         titleSrc: function(item) {
     
-    var caption = item.el.attr('title');
-    
-    var pinItURL = "https://pinterest.com/pin/create/button/";
-    
-    // Refer to https://developers.pinterest.com/pin_it/
-    pinItURL += '?url=' + 'http://dimsemenov.com/plugins/magnific-popup/';
-    pinItURL += '&media=' + item.el.attr('href');
-    pinItURL += '&description=' + caption;
-    return caption;
+      var caption = item.el.attr('title');
+      
+      var pinItURL = "https://pinterest.com/pin/create/button/";
+      
+      // Refer to https://developers.pinterest.com/pin_it/
+      pinItURL += '?url=' + 'http://dimsemenov.com/plugins/magnific-popup/';
+      pinItURL += '&media=' + item.el.attr('href');
+      pinItURL += '&description=' + caption;
+      return caption;
     
     
     // return caption + ' &middot; <a class="pin-it" href="'+pinItURL+'" target="_blank"><img src="https://assets.pinterest.com/images/pidgets/pin_it_button.png" /></a>';
