@@ -1,106 +1,89 @@
 .reviews {
-    padding-bottom: 220px;
+    padding-bottom: 100px;
     .content {
-        position: relative;
-
-        .line {
-            position: absolute;
-            top: 290px;
-            height: 1px;
-            background: rgba(51, 51, 51, 0.2);
-            width: 100%;
-        }
-
-        .comment {
-            display: flex;
-            justify-content: center;
-
-            p {
-                max-width: 720px;
-
-                &.big {
-                    font-weight: 300;
+        .single {
+            p{
+                color: $black3;
+            }
+    
+            .comment {
+                display: flex;
+                justify-content: center;
+    
+                p {
+                    max-width: 720px;
+    
+                    &.big {
+                        font-weight: 300;
+                    }
                 }
             }
-        }
-
-        .single {
-            position: absolute;
-            top: 250px;
-            display: flex;;
-            width: 100%;
-            justify-content: center;
             .profile-card {
+                position: relative;
                 background-color: $white;
-                width: 400px;
+                width: 100%;
                 display: flex;
                 align-items: center;
                 justify-content: center;
+                margin: 0 auto;
+                margin-top: 80px;
 
-                .about {
-                    text-align: left;
-                    margin-left: 10px;
-                    margin-top: 30px;
+                .line {
+                    position: absolute;
+                    // top: 290px;
+                    height: 1px;
+                    background: rgba(51, 51, 51, 0.2);
+                    width: 100%;
+                }
 
-                    p.name {
-                        font-weight: bold;
-                        margin-bottom: 0px;
+                .details {
+                    position: absolute;
+                    display: flex;
+                    background-color: $white;
+                    padding: 30px;
+
+                    img {
+                        width: 100px;
+                    }
+
+                    .about {
+                        text-align: left;
+                        margin-left: 10px;
+                        margin-top: 30px;
+    
+                        p.name {
+                            font-weight: bold;
+                            margin-bottom: 0px;
+                        }
                     }
                 }
             }
         }
     }
-   
 }
 
-@media screen and (min-width: 397px){
-    .reviews {
-        padding-bottom: 240px;
-
-        .content {
-            .single {
-                top: 220px;
-            }
-        }
-    }
-}
-
-@media screen and (min-width: 550px){
-    .reviews {
-        padding-bottom: 240px;
-
-        .content {
-            .line {
-                top: 240px;
-            }
-
-            .single {
-                top: 170px;
-            }
-        }
-    }
-}
 
 @include media-md {
     .reviews {
-        padding-bottom: 240px;
+        padding-bottom: 120px;
         .content {
-
-            .comment {
-                p {
-                    font-size: 18px;
+            .single {
+                .profile-card {
+    
+                    .details {
+    
+                        img {
+                            width: inherit;
+                        }
+                    }
                 }
             }
-
-            .line {
-                top: 230px;
-            }
-
-            .single {
-                top: 160px;
-               
-            }
         }
-       
+    }
+}
+
+@include media-lgg {
+    .reviews {
+        padding-bottom: 135px;
     }
 }

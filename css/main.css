@@ -1007,14 +1007,14 @@ footer.login-section .content {
 .footer .form-select .world {
   position: absolute;
   left: 28px;
-  top: 12px;
+  top: 11px;
   cursor: pointer;
 }
 
 .footer .form-select .dropdown-icon {
   position: absolute;
   right: 28px;
-  top: 20px;
+  top: 19px;
   cursor: pointer;
 }
 
@@ -1288,22 +1288,14 @@ footer.login-section .content {
 }
 
 .reviews {
-  padding-bottom: 220px;
+  padding-bottom: 100px;
 }
 
-.reviews .content {
-  position: relative;
+.reviews .content .single p {
+  color: #333;
 }
 
-.reviews .content .line {
-  position: absolute;
-  top: 290px;
-  height: 1px;
-  background: rgba(51, 51, 51, 0.2);
-  width: 100%;
-}
-
-.reviews .content .comment {
+.reviews .content .single .comment {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1312,29 +1304,18 @@ footer.login-section .content {
           justify-content: center;
 }
 
-.reviews .content .comment p {
+.reviews .content .single .comment p {
   max-width: 720px;
 }
 
-.reviews .content .comment p.big {
+.reviews .content .single .comment p.big {
   font-weight: 300;
 }
 
-.reviews .content .single {
-  position: absolute;
-  top: 250px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  width: 100%;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-}
-
 .reviews .content .single .profile-card {
+  position: relative;
   background-color: #fff;
-  width: 400px;
+  width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1344,52 +1325,53 @@ footer.login-section .content {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  margin: 0 auto;
+  margin-top: 80px;
 }
 
-.reviews .content .single .profile-card .about {
+.reviews .content .single .profile-card .line {
+  position: absolute;
+  height: 1px;
+  background: rgba(51, 51, 51, 0.2);
+  width: 100%;
+}
+
+.reviews .content .single .profile-card .details {
+  position: absolute;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background-color: #fff;
+  padding: 30px;
+}
+
+.reviews .content .single .profile-card .details img {
+  width: 100px;
+}
+
+.reviews .content .single .profile-card .details .about {
   text-align: left;
   margin-left: 10px;
   margin-top: 30px;
 }
 
-.reviews .content .single .profile-card .about p.name {
+.reviews .content .single .profile-card .details .about p.name {
   font-weight: bold;
   margin-bottom: 0px;
 }
 
-@media screen and (min-width: 397px) {
-  .reviews {
-    padding-bottom: 240px;
-  }
-  .reviews .content .single {
-    top: 220px;
-  }
-}
-
-@media screen and (min-width: 550px) {
-  .reviews {
-    padding-bottom: 240px;
-  }
-  .reviews .content .line {
-    top: 240px;
-  }
-  .reviews .content .single {
-    top: 170px;
-  }
-}
-
 @media screen and (min-width: 768px) {
   .reviews {
-    padding-bottom: 240px;
+    padding-bottom: 120px;
   }
-  .reviews .content .comment p {
-    font-size: 18px;
+  .reviews .content .single .profile-card .details img {
+    width: inherit;
   }
-  .reviews .content .line {
-    top: 230px;
-  }
-  .reviews .content .single {
-    top: 160px;
+}
+
+@media screen and (min-width: 1300px) {
+  .reviews {
+    padding-bottom: 135px;
   }
 }
 
