@@ -1613,10 +1613,6 @@ footer.login-section .content {
   font-weight: bold;
 }
 
-.contact .right-side p.small {
-  font-size: 11px;
-}
-
 .contact .right-side ul {
   list-style: none;
   margin: 0;
@@ -1624,7 +1620,7 @@ footer.login-section .content {
 }
 
 .contact .right-side ul li {
-  font-size: 11px;
+  font-size: 13px;
 }
 
 @media screen and (min-width: 768px) {
@@ -1646,9 +1642,6 @@ footer.login-section .content {
   .contact .right-side {
     padding: 40px 20px;
   }
-  .contact .right-side p.small {
-    font-size: 12px;
-  }
   .contact .right-side ul li {
     font-size: 12px;
   }
@@ -1668,9 +1661,6 @@ footer.login-section .content {
     margin-left: 50px;
     padding: 75px 20px;
   }
-  .contact .right-side p.small {
-    font-size: 13px;
-  }
   .contact .right-side ul li {
     font-size: 13px;
   }
@@ -1679,9 +1669,6 @@ footer.login-section .content {
 @media screen and (min-width: 1300px) {
   .contact .left-side {
     padding: 80px 120px;
-  }
-  .contact .right-side p.small {
-    font-size: 14px;
   }
   .contact .right-side ul li {
     font-size: 14px;
@@ -1693,9 +1680,6 @@ footer.login-section .content {
     font-size: 16px;
   }
   .contact .left-side .form-group label {
-    font-size: 16px;
-  }
-  .contact .right-side p.small {
     font-size: 16px;
   }
   .contact .right-side ul li {
