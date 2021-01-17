@@ -1447,7 +1447,7 @@ footer.login-section .content {
 }
 
 .login .body form .form-group label {
-  font-size: 11px;
+  font-size: 13px;
 }
 
 .login .body form .form-group input {
@@ -1481,8 +1481,8 @@ footer.login-section .content {
   width: 30px;
 }
 
-.login .body .or-sign .child:nth-child(2) {
-  margin-left: -30px;
+.login .body .or-sign .child:nth-child(1) {
+  margin-right: 10px;
 }
 
 .login .body .or-sign .child:first-child {
@@ -1505,6 +1505,9 @@ footer.login-section .content {
     -webkit-box-flex: 1;
         -ms-flex: 1;
             flex: 1;
+  }
+  .login .body .or-sign .child:nth-child(1) {
+    margin-right: 0;
   }
   .login .body .or-sign .child:nth-child(2) {
     margin-left: 20px;

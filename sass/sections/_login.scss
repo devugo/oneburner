@@ -28,7 +28,7 @@
                 }
 
                 label {
-                    font-size: 11px;
+                    font-size: 13px;
                 }
 
                 input {
@@ -60,8 +60,12 @@
                     width: 30px;
                 }
 
+                &:nth-child(1){
+                    margin-right: 10px;
+                }
+
                 &:nth-child(2){
-                    margin-left: -30px;
+                    // margin-left: -30px;
                 }
             }
 
@@ -93,6 +97,10 @@
     
                 .child {
                     flex: 1;
+
+                    &:nth-child(1){
+                        margin-right: 0;
+                    }
     
                     &:nth-child(2){
                         margin-left: 20px;
