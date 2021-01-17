@@ -1,11 +1,11 @@
 .reviews {
-    padding-bottom: 240px;
+    padding-bottom: 220px;
     .content {
         position: relative;
 
         .line {
             position: absolute;
-            top: 270px;
+            top: 290px;
             height: 1px;
             background: rgba(51, 51, 51, 0.2);
             width: 100%;
@@ -26,7 +26,7 @@
 
         .single {
             position: absolute;
-            top: 200px;
+            top: 250px;
             display: flex;;
             width: 100%;
             justify-content: center;
@@ -40,9 +40,11 @@
                 .about {
                     text-align: left;
                     margin-left: 10px;
+                    margin-top: 30px;
 
                     p.name {
                         font-weight: bold;
+                        margin-bottom: 0px;
                     }
                 }
             }
@@ -51,14 +53,52 @@
    
 }
 
+@media screen and (min-width: 397px){
+    .reviews {
+        padding-bottom: 240px;
+
+        .content {
+            .single {
+                top: 220px;
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 550px){
+    .reviews {
+        padding-bottom: 240px;
+
+        .content {
+            .line {
+                top: 240px;
+            }
+
+            .single {
+                top: 170px;
+            }
+        }
+    }
+}
+
 @include media-md {
     .reviews {
+        padding-bottom: 240px;
         .content {
 
             .comment {
                 p {
                     font-size: 18px;
                 }
+            }
+
+            .line {
+                top: 230px;
+            }
+
+            .single {
+                top: 160px;
+               
             }
         }
        

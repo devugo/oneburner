@@ -41,11 +41,11 @@
       
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav mr-auto">
-                <li class="nav-item active oneburner-dropdown d-flex">
+                <li class="nav-item oneburner-dropdown d-flex" id="oneburner-dropdown">
                     <a class="nav-link" href="#">Product</a>
-                    <img class="dropdown-icon ml-1" src="img/icons/dropdown-icon.svg" alt="dropdown-icon" />
+                    <img class="dropdown-icon" src="img/icons/dropdown-icon.svg" alt="dropdown-icon" />
                     
-                    <div class="oneburner-dropdown__menu padding-head">
+                    <div class="oneburner-dropdown__menu padding-head" id="oneburner-dropdown__menu">
                         <div class="body">
                             <div class="row">
                                 <div class="col-md-3">
@@ -53,7 +53,7 @@
                                         <img src="/img/icons/briefcase.svg" alt="briefcase-icon" />
                                         <div class="details">
                                             <h4>Clients</h4>
-                                            <p>See the amazing team that uses Oneburner.</p>
+                                            <p class="small">See the amazing team that uses Oneburner.</p>
                                         </div>
                                     </div>
                                 </div>
@@ -62,7 +62,7 @@
                                         <img src="/img/icons/store.svg" alt="briefcase-icon" />
                                         <div class="details">
                                             <h4>Oneburner Stores</h4>
-                                            <p>Explore our ready made solutions to expand your business.</p>
+                                            <p class="small">Explore our ready made solutions to expand your business.</p>
                                         </div>
                                     </div>
                                 </div>
@@ -71,7 +71,7 @@
                                         <img src="/img/icons/plug.svg" alt="briefcase-icon" />
                                         <div class="details">
                                             <h4>Integrations</h4>
-                                            <p>Connect different solution to Oneburner and get more done.</p>
+                                            <p class="small">Connect different solution to Oneburner and get more done.</p>
                                         </div>
                                     </div>
                                 </div>
@@ -80,7 +80,7 @@
                                         <img src="/img/icons/file-list.svg" alt="briefcase-icon" />
                                         <div class="details">
                                             <h4>Why Oneburner?</h4>
-                                            <p>See the amazing team that uses Oneburner.</p>
+                                            <p class="small">See the amazing team that uses Oneburner.</p>
                                         </div>
                                     </div>
                                 </div>
@@ -120,13 +120,13 @@
             <div class="content left-side">
                 <form>
                     <div class="row">
-                        <div class="col-md-6">
+                        <div class="col-md-6 d-padding-right-none allow-pad-r">
                             <div class="form-group">
                                 <label for="lastname">Last Name</label>
                                 <input type="text" class="form-control" id="lastname" name="lastname" required>
                             </div>
                         </div>
-                        <div class="col-md-6">
+                        <div class="col-md-6 d-padding-left-none allow-pad-l">
                             <div class="form-group">
                                 <label for="firstname">First Name</label>
                                 <input type="text" class="form-control" id="firstname" name="firstname" required>
@@ -148,12 +148,12 @@
                                 <div class="content">
                                     <div class="dropdown">
                                         <button type="button" class="btn dropdown-toggle" data-toggle="dropdown">
-                                            <img src="img/icons/Nigeria.svg" alt="flag" />
+                                            <img style="margin-right: 25px;" src="img/icons/Nigeria.svg" alt="flag" />
                                             <img  style="margin-left: 5px;" src="img/icons/dropdown-icon.svg" alt="dropdown" />
                                         </button>
                                         <div class="dropdown-menu" style="width: 40px !important;">
                                             <a class="dropdown-item" href="#">
-                                                <img src="img/icons/Nigeria.svg" />
+                                                
                                             </a>
                                         </div>
                                     </div>
@@ -164,27 +164,47 @@
                     </div>
                     <div class="row">
                         <div class="col-md-12">
-                            <div class="form-group">
-                                <label for="phone">Product of Interest</label>
-                                <select class="form-control" id="phone" name="phone" required>
-                                    <option>Select an option</option>
-                                </select>
+                            <div class="form-group product-interest">
+                                <label for="product">Product of Interest</label>
+                                <div class="content">
+                                    <div class="dropdown w-100">
+                                        <button type="button" class="btn dropdown-toggle w-100" data-toggle="dropdown">
+                                            <span>Select an option</span>
+                                            <img style="margin-left: 5px;" src="img/icons/dropdown-icon.svg" alt="dropdown" />
+                                        </button>
+                                        <div class="dropdown-menu" style="width: 40px !important;">
+                                            <a class="dropdown-item" href="#">
+                                                
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
                     <div class="row">
-                        <div class="col-md-6 padding-r-1">
+                        <div class="col-md-7">
                             <div class="form-group">
                                 <label for="lastname">Company Name</label>
                                 <input type="text" class="form-control" id="lastname" name="lastname" required>
                             </div>
                         </div>
-                        <div class="col-md-6 padding-left-1">
-                            <div class="form-group">
+                        <div class="col-md-5 d-padding-left-none">
+                            <div class="form-group company-size">
                                 <label for="firstname">Company Size</label>
-                                <select type="text" class="form-control" id="firstname" name="firstname" required>
-                                    <option>Select an option</option>
-                                </select>
+                                <div class="content">
+                                    <div class="dropdown w-100">
+                                        <button type="button" class="btn dropdown-toggle w-100" data-toggle="dropdown">
+                                            <span>Select an option</span>
+                                            <img  style="margin-left: 5px;" src="img/icons/dropdown-icon.svg" alt="dropdown" />
+                                        </button>
+                                        <div class="dropdown-menu" style="width: 40px !important;">
+                                            <a class="dropdown-item" href="#">
+                                                
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -202,15 +222,15 @@
         </div>
         <div class="col-md-6">
             <div class="content right-side mt-4">
-                <h2 class="section-title mb-4">Request a call from an expert</h2>
+                <h3 class="section-title mb-4">Request a call from an expert</h3>
 
                 <p>Having thoughts on which product works best for you?  Fill the form and our expert will reach out to you.</p>
 
-                <h2 class="section-title mt-5 mb-4">Our offices around Africa </h2>
+                <h3 class="section-title mt-5 mb-4">Our offices around Africa </h3>
 
-                <div class="row mb-3">
+                <div class="row mb-5">
                     <div class="col-md-4">
-                        <p class="contact-title">NIGERIA</p>
+                        <p class="contact-title small">NIGERIA</p>
                         <ul>
                             <li class="mt-2 mb-2">33a, Adeola Odeku, Victoria 
                                 Island, Lagos.
@@ -221,7 +241,7 @@
                         </ul>
                     </div>
                     <div class="col-md-4">
-                        <p class="contact-title">GHANA</p>
+                        <p class="contact-title small">GHANA</p>
                         <ul>
                             <li class="mt-2 mb-2">
                                 45, El-Senoussi Street, 
@@ -233,7 +253,7 @@
                         </ul>
                     </div>
                     <div class="col-md-4">
-                        <p class="contact-title">SOUTH AFRICA</p>
+                        <p class="contact-title small">SOUTH AFRICA</p>
                         <ul>
                             <li class="mt-2 mb-2">
                                 474, Cheriton Drive, Port 
@@ -246,9 +266,9 @@
                     </div>
                 </div>
 
-                <div class="row mb-3">
+                <div class="row mb-5">
                     <div class="col-md-4">
-                        <p class="contact-title">EGYPT</p>
+                        <p class="contact-title small">EGYPT</p>
                         <ul>
                             <li class="mt-2 mb-2">72, Gameat El-Dewal 
                                 El-Arabia St., Giza.
@@ -259,7 +279,7 @@
                         </ul>
                     </div>
                     <div class="col-md-4">
-                        <p class="contact-title">KENYA</p>
+                        <p class="contact-title small">KENYA</p>
                         <ul>
                             <li class="mt-2 mb-2">
                                 41, Enterprise Rd., Industrial
@@ -271,7 +291,7 @@
                         </ul>
                     </div>
                     <div class="col-md-4">
-                        <p class="contact-title">TUNISIA</p>
+                        <p class="contact-title small">TUNISIA</p>
                         <ul>
                             <li class="mt-2 mb-2">
                                 13, Rue de Makthar, Dhraa
@@ -285,9 +305,9 @@
                     </div>
                 </div>
 
-                <div class="row mb-3">
+                <div class="row mb-5">
                     <div class="col-md-4">
-                        <p class="contact-title">MALI</p>
+                        <p class="contact-title small">MALI</p>
                         <ul>
                             <li class="mt-2 mb-2">22, Badalabougou Est.,
                                 Bamako.
@@ -298,7 +318,7 @@
                         </ul>
                     </div>
                     <div class="col-md-4">
-                        <p class="contact-title">TANZANIA</p>
+                        <p class="contact-title small">TANZANIA</p>
                         <ul>
                             <li class="mt-2 mb-2">
                                 Mbezi Beach, P.O.B: 70339,
@@ -310,7 +330,7 @@
                         </ul>
                     </div>
                     <div class="col-md-4">
-                        <p class="contact-title">TOGO</p>
+                        <p class="contact-title small">TOGO</p>
                         <ul>
                             <li class="mt-2 mb-2">
                                 10, E rue des Echis, 
@@ -326,20 +346,21 @@
         </div>
    </section>
 
-    <section class="footer padding-head">
+   <section class="footer padding-head">
+    <div class="oneburner-container">
         <div class="row">
             <div class="col-md-5">
                 <div class="body">
                     <div class="row">
-                        <div class="col-md-5">
+                        <div class="col-md-12">
                             <div class="content">
-                                <a href="index.html"><img src="img/logo_text.svg" alt="logo-text" /></a>
+                                <a href="index.html"><img class="logo" src="img/logo_text.svg" alt="logo-text" /></a>
                                 
                                 <p class="address">No 1 CRM solution in Africa</p>
-                                <p class="terms-privacy"><a>Terms of Use</a> | <a>Privacy Policy</a></p>
+                                <p class="terms-privacy small"><a>Terms of Use</a> | <a>Privacy Policy</a></p>
 
-                                <p class="get-in-touch">Get in touch</p>
-                                <p class="phone">+234-80-000-0000</p>
+                                <p class="get-in-touch small">Get in touch</p>
+                                <p class="phone big">+234-80-000-0000</p>
                                 
                                 <div class="social-icons">
                                     <img src="img/icons/facebook-day.svg" alt="social-icon" />
@@ -356,21 +377,25 @@
                 <div class="body">
                     <div class="row">
                         <div class="col-md-12">
-                            <div class="form mt-2">
+                            <div class="form ">
                                 <div class="form-select">
-                                    <select>
-                                        <option>
-                                            <span>English</span>
-                                        </option>
-                                    </select>
-                                    <img alt="icon" src="img/icons/world.svg" />
+                                    <div class="select-dropdown">
+                                        <button onclick="myFunction()" class="dropbtn">
+                                            <span class="btn-text">English</span>
+                                        </button>
+                                        <div id="languageDropdown" class="dropdown-content">
+                                          <a href="#">English</a>
+                                        </div>
+                                    </div>
+                                    <img onclick="myFunction()" class="world" alt="icon" src="img/icons/world.svg" />
+                                    <img onclick="myFunction()" class="dropdown-icon" src="img/icons/dropdown-icon.svg" alt="dropdown-icon" />
                                 </div>
-                               
+                            
                             </div>
                         </div>
                         <div class="col-md-3">
-                            <div class="content">
-                                <p class="title">PRODUCT</p>
+                            <div class="content toggleable">
+                                <p class="title small footer-dropdown"><span>PRODUCT</span> <img class="dropdown-icon" src="img/icons/dropdown-icon.svg" alt="dropdown-icon" /></p>
                                 <ul>
                                     <li><a href="#">Features</a></li>
                                     <li><a href="enterprise.html">Enterprise</a></li>
@@ -384,8 +409,8 @@
                             </div>
                         </div>
                         <div class="col-md-3">
-                            <div class="content">
-                                <p class="title">COMPANY</p>
+                            <div class="content toggleable">
+                                <p class="title small footer-dropdown"><span>COMPANY</span> <img class="dropdown-icon" src="img/icons/dropdown-icon.svg" alt="dropdown-icon" /></p>
                                 <ul>
                                     <li><a href="#">About Us</a></li>
                                     <li><a href="contact.html">Contact Us</a></li>
@@ -395,8 +420,8 @@
                             </div>
                         </div>
                         <div class="col-md-3">
-                            <div class="content">
-                                <p class="title">ONEBURNER FOR TEAMS</p>
+                            <div class="content toggleable">
+                                <p class="title small footer-dropdown"><span>ONEBURNER FOR TEAMS</span> <img class="dropdown-icon" src="img/icons/dropdown-icon.svg" alt="dropdown-icon" /></p>
                                 <ul>
                                     <li><a href="#">Engineering</a></li>
                                     <li><a href="#">Financial Services</a></li>
@@ -411,8 +436,8 @@
                             </div>
                         </div>
                         <div class="col-md-3">
-                            <div class="content">
-                                <p class="title">RESOURCES</p>
+                            <div class="content toggleable">
+                                <p class="title small footer-dropdown"><span>RESOURCES</span> <img class="dropdown-icon" src="img/icons/dropdown-icon.svg" alt="dropdown-icon" /></p>
                                 <ul>
                                     <li><a href="#">Community</a></li>
                                     <li><a href="#">Guides</a></li>
@@ -430,17 +455,16 @@
                 </div>
             </div>
         </div>
-    </section>
+    </div>
+</section>
 
-    <footer class="padding-head">
-        <div class="row">
-            <div class="col-md-12 mt-4">
-                <div class="content copyright">
-                    <p>© 2020 Oneburner.com | All Rights Reserved. </p>
-                </div>
-            </div>
+<footer class="padding-head">
+    <div class="oneburner-container">
+        <div class="content copyright">
+            <p>© 2020 Oneburner.com | All Rights Reserved. </p>
         </div>
-    </footer>
+    </div>
+</footer>
     
     <div id="oneburner-overlay" class="oneburner-overlay">
 

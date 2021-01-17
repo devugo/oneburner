@@ -58,7 +58,6 @@ p.small {
 input, textarea {
   width: 100%;
   border: 1px solid grey;
-  margin-bottom: 20px;
   height: 50px;
 }
 
@@ -92,10 +91,12 @@ input:hover, input:active, input:focus, textarea:hover, textarea:active, textare
 
 .oneburner-overlay {
   position: fixed;
-  height: 100vh;
+  height: 100%;
   width: 100%;
-  top: 120px;
+  top: 0;
   left: 0;
+  right: 0;
+  bottom: 0;
   background: rgba(0, 0, 0, 0.14);
   display: none;
 }
@@ -281,16 +282,16 @@ nav .nav-item .dropdown-icon {
 }
 
 nav .oneburner-dropdown__menu {
-  position: fixed;
+  position: absolute;
   display: none;
   top: 70px;
   background-color: #fff;
-  z-index: 5;
   width: 100%;
   left: 0;
   -webkit-box-shadow: 0 20px 20px -6px rgba(0, 0, 0, 0.2);
           box-shadow: 0 20px 20px -6px rgba(0, 0, 0, 0.2);
   height: 330px;
+  z-index: 20;
 }
 
 nav .oneburner-dropdown__menu.hide {
@@ -963,11 +964,6 @@ footer.login-section .content {
   border-radius: 0;
 }
 
-.footer .form-select .select-dropdown .select-dropdown {
-  position: relative;
-  display: inline-block;
-}
-
 .footer .form-select .select-dropdown .dropdown-content {
   display: none;
   position: absolute;
@@ -977,6 +973,7 @@ footer.login-section .content {
   -webkit-box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
           box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
   z-index: 1;
+  text-align: left;
   padding-left: 45px;
 }
 
@@ -1268,6 +1265,7 @@ footer.login-section .content {
 
 .regional img {
   max-width: 100%;
+  max-height: 650px;
 }
 
 @media screen and (min-width: 768px) {
@@ -1277,7 +1275,7 @@ footer.login-section .content {
 }
 
 .reviews {
-  padding-bottom: 240px;
+  padding-bottom: 220px;
 }
 
 .reviews .content {
@@ -1286,7 +1284,7 @@ footer.login-section .content {
 
 .reviews .content .line {
   position: absolute;
-  top: 270px;
+  top: 290px;
   height: 1px;
   background: rgba(51, 51, 51, 0.2);
   width: 100%;
@@ -1311,7 +1309,7 @@ footer.login-section .content {
 
 .reviews .content .single {
   position: absolute;
-  top: 200px;
+  top: 250px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1338,15 +1336,47 @@ footer.login-section .content {
 .reviews .content .single .profile-card .about {
   text-align: left;
   margin-left: 10px;
+  margin-top: 30px;
 }
 
 .reviews .content .single .profile-card .about p.name {
   font-weight: bold;
+  margin-bottom: 0px;
+}
+
+@media screen and (min-width: 397px) {
+  .reviews {
+    padding-bottom: 240px;
+  }
+  .reviews .content .single {
+    top: 220px;
+  }
+}
+
+@media screen and (min-width: 550px) {
+  .reviews {
+    padding-bottom: 240px;
+  }
+  .reviews .content .line {
+    top: 240px;
+  }
+  .reviews .content .single {
+    top: 170px;
+  }
 }
 
 @media screen and (min-width: 768px) {
+  .reviews {
+    padding-bottom: 240px;
+  }
   .reviews .content .comment p {
     font-size: 18px;
+  }
+  .reviews .content .line {
+    top: 230px;
+  }
+  .reviews .content .single {
+    top: 160px;
   }
 }
 
@@ -1424,11 +1454,13 @@ footer.login-section .content {
 }
 
 .login .body form .form-group input {
+  height: 54px;
   border-color: #01001D;
 }
 
 .login .body form button {
   width: 100%;
+  margin-top: 15px;
 }
 
 .login .body .forgot-password a {
@@ -1490,6 +1522,183 @@ footer.login-section .content {
 
 @media screen and (min-width: 1600px) {
   .login .body form .form-group label {
+    font-size: 16px;
+  }
+}
+
+.contact {
+  background-color: rgba(204, 204, 204, 0.1);
+}
+
+.contact .left-side {
+  background-color: #fff;
+  padding: 20px;
+  -webkit-box-shadow: 0px 0px 30px 10px rgba(0, 0, 0, 0.08);
+          box-shadow: 0px 0px 30px 10px rgba(0, 0, 0, 0.08);
+}
+
+.contact .left-side .form-group label {
+  font-size: 14px;
+}
+
+.contact .left-side .form-group input, .contact .left-side .form-group select, .contact .left-side .form-group button {
+  height: 54px;
+  border: 2px solid rgba(51, 51, 51, 0.8);
+  border-radius: 5px;
+}
+
+.contact .left-side .form-group input:active, .contact .left-side .form-group input:focus, .contact .left-side .form-group input:hover, .contact .left-side .form-group select:active, .contact .left-side .form-group select:focus, .contact .left-side .form-group select:hover, .contact .left-side .form-group button:active, .contact .left-side .form-group button:focus, .contact .left-side .form-group button:hover {
+  border-color: inherit;
+  outline: none;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+
+.contact .left-side .form-group textarea {
+  border: 2px solid rgba(51, 51, 51, 0.8);
+}
+
+.contact .left-side .form-group button:active, .contact .left-side .form-group button:focus, .contact .left-side .form-group button:hover, .contact .left-side .form-group select:active, .contact .left-side .form-group select:focus, .contact .left-side .form-group select:hover {
+  border-color: inherit;
+}
+
+.contact .left-side .form-group.phone .content, .contact .left-side .form-group.company-size .content, .contact .left-side .form-group.product-interest .content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.contact .left-side .form-group.phone .content .dropdown-menu, .contact .left-side .form-group.company-size .content .dropdown-menu, .contact .left-side .form-group.product-interest .content .dropdown-menu {
+  min-width: 100% !important;
+}
+
+.contact .left-side .form-group.phone .content .dropdown-toggle::after, .contact .left-side .form-group.company-size .content .dropdown-toggle::after, .contact .left-side .form-group.product-interest .content .dropdown-toggle::after {
+  display: none;
+}
+
+.contact .left-side .form-group.phone .content button, .contact .left-side .form-group.company-size .content button, .contact .left-side .form-group.product-interest .content button {
+  height: 54px;
+  border: 2px solid rgba(51, 51, 51, 0.8);
+  color: rgba(51, 51, 51, 0.4);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-radius: 5px;
+  font-size: 12px;
+}
+
+.contact .left-side .form-group.phone .content input, .contact .left-side .form-group.company-size .content input, .contact .left-side .form-group.product-interest .content input {
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
+  border-left: 0;
+}
+
+.contact .left-side .form-group.phone .content button {
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
+  border-right-color: rgba(0, 0, 0, 0.2);
+}
+
+.contact .right-side {
+  padding: 20px;
+}
+
+.contact .right-side p.contact-title {
+  font-weight: bold;
+}
+
+.contact .right-side p.small {
+  font-size: 11px;
+}
+
+.contact .right-side ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.contact .right-side ul li {
+  font-size: 11px;
+}
+
+@media screen and (min-width: 768px) {
+  .contact .left-side {
+    padding: 40px 20px;
+  }
+  .contact .left-side .d-padding-left-none {
+    padding-left: 0;
+  }
+  .contact .left-side .d-padding-right-none {
+    padding-right: 0;
+  }
+  .contact .left-side .allow-pad-r {
+    padding-right: 7.5px;
+  }
+  .contact .left-side .allow-pad-l {
+    padding-left: 7.5px;
+  }
+  .contact .right-side {
+    padding: 40px 20px;
+  }
+  .contact .right-side p.small {
+    font-size: 12px;
+  }
+  .contact .right-side ul li {
+    font-size: 12px;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .contact .left-side {
+    padding: 50px 70px;
+  }
+  .contact .left-side .form-group.phone .content button, .contact .left-side .form-group.company-size .content button, .contact .left-side .form-group.product-interest .content button {
+    font-size: 14px;
+  }
+  .contact .left-side .form-group label {
+    font-size: 15px;
+  }
+  .contact .right-side {
+    margin-left: 50px;
+    padding: 65px 20px;
+  }
+  .contact .right-side p.small {
+    font-size: 13px;
+  }
+  .contact .right-side ul li {
+    font-size: 13px;
+  }
+}
+
+@media screen and (min-width: 1300px) {
+  .contact .left-side {
+    padding: 80px 120px;
+  }
+  .contact .right-side p.small {
+    font-size: 14px;
+  }
+  .contact .right-side ul li {
+    font-size: 14px;
+  }
+}
+
+@media screen and (min-width: 1600px) {
+  .contact .left-side .form-group.phone .content button, .contact .left-side .form-group.company-size .content button, .contact .left-side .form-group.product-interest .content button {
+    font-size: 16px;
+  }
+  .contact .left-side .form-group label {
+    font-size: 16px;
+  }
+  .contact .right-side p.small {
+    font-size: 16px;
+  }
+  .contact .right-side ul li {
     font-size: 16px;
   }
 }

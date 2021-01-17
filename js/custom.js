@@ -1,6 +1,6 @@
 AOS.init();
 
-// NAVBAR
+// MEGA MENU TOGGLE
 let elements = document.getElementsByClassName(' oneburner-dropdown');
 
 for(var i = 0; i<elements.length; i++){
@@ -15,7 +15,7 @@ for(var i = 0; i<elements.length; i++){
 }
 
 
-// FOOTER TOGGEABLE Menu
+// FOOTER TOGGEABLE LINKS
 var dropdown = document.getElementsByClassName("footer-dropdown");
 var i;
 
@@ -28,11 +28,10 @@ for (i = 0; i < dropdown.length; i++) {
     });
 }
 
+// FOOTER LANGUAGE TOGGLE
 function myFunction(e) {
-    // alert('here')
     document.getElementById("languageDropdown").classList.toggle("show");
 }
-  
 // Close the dropdown if the user clicks outside of it
 window.onclick = function(event) {
     //   console.log(event.target);

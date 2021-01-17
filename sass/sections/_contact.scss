@@ -7,9 +7,14 @@
 
         .form-group {
 
+            label {
+                font-size: 14px;
+            }
             input, select, button {
-                height: 48px;
-                border-color: $black1;
+                height: 54px;
+                border: 2px solid rgba(51, 51, 51, 0.8);
+                border-radius: 5px;
+                
     
                 &:active, &:focus, &:hover {
                     border-color: inherit;
@@ -21,7 +26,7 @@
             }
 
             textarea {
-                border-color: $black1;
+                border: 2px solid rgba(51, 51, 51, 0.8);
             }
 
 
@@ -30,7 +35,16 @@
                     border-color: inherit;
                 }
             }
-            &.phone {
+            // select {
+            //     -moz-appearance:none; /* Firefox */
+            //     -webkit-appearance:none; /* Safari and Chrome */
+            //     appearance:none;
+
+            //     &::after {
+            //         background: url('../../img/icons/dropdown-icon.svg');
+            //     }
+            // }
+            &.phone, &.company-size, &.product-interest{
 
 
                 .content {
@@ -45,17 +59,30 @@
                     }
 
                     button {
-                        height: 48px;
-                        border: 1px solid $black1;
-                        border-right-color: grey;
-                        border-top-right-radius: 0;
-                        border-bottom-right-radius: 0;
+                        height: 54px;
+                        border: 2px solid rgba(51, 51, 51, 0.8);
+                        color: rgba(51, 51, 51, 0.4);
+                        display: flex;
+                        justify-content: space-between;
+                        align-items: center;
+                        border-radius: 5px;
+                        font-size: 12px;
                     }
 
                     input {
                         border-top-left-radius: 0;
                         border-bottom-left-radius: 0;
                         border-left: 0;
+                    }
+                }
+            }
+
+            &.phone {
+                .content {
+                    button {
+                        border-top-right-radius: 0;
+                        border-bottom-right-radius: 0;
+                        border-right-color: rgba(0, 0, 0, 0.2);
                     }
                 }
             }
@@ -68,10 +95,18 @@
         p.contact-title {
             font-weight: bold;
         }
+
+        p.small {
+            font-size: 11px;
+        }
         ul {
             list-style: none;
             margin: 0;
             padding: 0;
+
+            li {
+                font-size: 11px;
+            }
         }
     }
 }
@@ -79,12 +114,37 @@
 @include media-md {
     .contact {
         .left-side {
-            padding: 40px 0px;
+            padding: 40px 20px;
+            
+            .d-padding-left-none {
+                padding-left: 0;
+            }
+            .d-padding-right-none {
+                padding-right: 0;
+            }
+
+            .allow-pad-r {
+                padding-right: 7.5px;
+            }
+
+            .allow-pad-l {
+                padding-left: 7.5px;
+            }
         }
 
         .right-side {
-            margin-left: 50px;
-            padding: 40px 0px;
+            padding: 40px 20px;
+
+            p.small {
+                font-size: 12px;
+            }
+
+            ul {
+    
+                li {
+                    font-size: 12px;
+                }
+            }
         }
     }
 }
@@ -92,10 +152,95 @@
 @include media-lg {
     .contact {
         .left-side {
-            padding: 80px 120px;
+            padding: 50px 70px;
+            .form-group {
+
+                &.phone, &.company-size, &.product-interest{
+                    .content {
+    
+                        button {
+                            font-size: 14px;
+                        }
+                    }
+                }
+
+                label {
+                    font-size: 15px;
+                }
+            }
         }
         .right-side {
-            padding: 80px 0;
+            margin-left: 50px;
+            padding: 65px 20px;
+
+            p.small {
+                font-size: 13px;
+            }
+
+            ul {
+    
+                li {
+                    font-size: 13px;
+                }
+            }
+        }
+    }
+}
+
+@include media-lgg {
+    .contact {
+        .left-side {
+            padding: 80px 120px;
+        }
+
+        .right-side {
+
+            p.small {
+                font-size: 14px;
+            }
+
+            ul {
+    
+                li {
+                    font-size: 14px;
+                }
+            }
+        }
+    }
+}
+
+@include media-xl {
+    .contact {
+        .left-side {
+            .form-group {
+
+                &.phone, &.company-size, &.product-interest{
+                    .content {
+    
+                        button {
+                            font-size: 16px;
+                        }
+                    }
+                }
+
+                label {
+                    font-size: 16px;
+                }
+            }
+        }
+
+        .right-side {
+
+            p.small {
+                font-size: 16px;
+            }
+
+            ul {
+    
+                li {
+                    font-size: 16px;
+                }
+            }
         }
     }
 }
